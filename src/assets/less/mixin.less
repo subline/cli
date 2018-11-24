@@ -1,0 +1,30 @@
+.mixin-size(@width, @height, @boxSizing: border-box) {
+    box-sizing: @boxSizing;
+    width: @width;
+    height: @height;
+}
+.mixin-max-size(@width, @height, @boxSizing: border-box) {
+    box-sizing: @boxSizing;
+    max-width: @width;
+    max-height: @height;
+}
+.mixin-abs-item(@left: auto, @top: auto, @right: auto, @bottom: auto) {
+    position: absolute;
+    left: @left;
+    top: @top;
+    right: @right;
+    bottom: @bottom;
+}
+.mixin-button(@borderRadius: 0, @bc: transparent, @fontSize: 14px, @lineHeight: normal) {
+    cursor: pointer;
+    text-align: center;
+    font-size: @fontSize;
+    border-radius: @borderRadius;
+    background-color: @bc;
+    line-height: @lineHeight;
+}
+.mixin-flex(@jsf-center: center, @al-center: center) {
+    display: flex;
+    justify-content: @jsf-center;
+    align-items: @al-center;
+}

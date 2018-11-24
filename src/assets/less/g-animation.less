@@ -1,0 +1,24 @@
+.am-fade-in {
+    animation: 1s kf-am-fade-in linear;
+}
+.am-rotate360 {
+    animation: kf-am-rotate360 1000ms infinite linear;
+}
+
+@keyframes kf-am-fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes kf-am-rotate360 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

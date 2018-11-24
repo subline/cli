@@ -1,0 +1,47 @@
+.g-clearfloat:after {
+    content: '';
+    display: block;
+    height: 0;
+    line-height: 0;
+    clear: both;
+    font-size: 0;
+}
+.g-clearfloat {
+    zoom: 1;
+}
+.g-l {
+    float: left;
+}
+.g-r {
+    float: right;
+}
+.g-text-center {
+    text-align: center;
+}
+.g-pointer {
+    cursor: pointer;
+}
+.g-default {
+    cursor: default;
+}
+.g-text-overflow {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* 多行文本，如有超出则以省略号结尾（需另外设置宽度） */
+.g-multiline-text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+/* 2行文本 */
+.g-multiline-text-2 {
+    -webkit-line-clamp: 2;
+}
+.g-multiline-text-3 {
+    -webkit-line-clamp: 3;
+}
